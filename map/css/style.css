@@ -1,0 +1,9 @@
+/*This styles the div that will contain your map*/
+#map{
+	height: 690px;
+	width: 100%;
+}
+
+.leaflet-popup-content {
+width:auto !important;
+}
