@@ -14,7 +14,7 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 
-L.marker([38.9, -77.0],{
+L.marker([38.90004, -76.98664],{
 	maxWidth: 1500,
 	minWidth: 1200
 }).addTo(map)
