@@ -33,7 +33,7 @@
 		}(document, 'script', 'facebook-jssdk'));</script>
 		<div class="big neuton">
 			<h2>
-				Tim Tebow 
+				Tim Tebow <b id='boldStuff'></b>
 			<script language="JavaScript">
 			var r_text = new Array ();r_text[0] = "is coaching at some high school somewhere";
 			r_text[1] = "is playing in the CFL, probably";
@@ -117,7 +117,7 @@
 			r_text[79]="posts religious stuff on Twitter all the time"
 			r_text[80]="has his own t-shirt brand"
 			var i = Math.floor(81*Math.random())
-			document.write(r_text[i]);
+			document.getElementById('boldStuff').innerHTML = r_text[i];
 			</script>
 					
 			</h2>
@@ -127,7 +127,7 @@
 				<!--
 				<a href="#" title="What else is he doing now?" onClick="window.location.reload();return false;"><img src=https://cloud.githubusercontent.com/assets/5025092/5633733/3728408c-95a8-11e4-83dd-c2cea5df57c8.png></a>
 				-->
-				<a href="#" title="What else is he doing now?" onClick="window.location.reload();return false;">
+				<a href="#" title="What else is he doing now?" onClick="changeText()">
 					<div class="pic"></div>
 				</a>
 			</div>
@@ -135,6 +135,7 @@
 	<p>
 
 	</p>
+
 <div class="fb" align=left>
 	<span class="fb-share-button" data-href="http://www.whatistimtebowdoingnow.com/" data-layout="button_count"></span>
 </div>
@@ -152,6 +153,7 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="main.js"></script>
 
 </body>
 </html>
