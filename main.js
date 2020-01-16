@@ -80,7 +80,7 @@ function changeText(){
 		r_text[77]="is speaking at giant Christian gatherings"		
 		r_text[78]="has the Tim Tebow Foundation, of course"
 		r_text[79]="posts religious stuff on Twitter all the time"
-		r_text[80]="has his own t-shirt brand"
-		var i = Math.floor(81*Math.random())
+		r_text[81]="is poopin'"
+		var i = Math.floor(82*Math.random())
 		document.getElementById('boldStuff').innerHTML = r_text[i];
 	}
