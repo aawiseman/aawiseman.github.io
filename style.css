@@ -33,10 +33,33 @@ p.medgray {
     text-align: left;
 }
 
-.normal {
-    font-family: 'Neuton', serif;
-    font-size: 1.17em;
+p.light {
+  font-weight: lighter;
+}
+
+.center {
     text-align: center;
+}
+
+.normal {
+    font-size: 1.17em;
+    line-height: 23px;
+}
+
+.medium {
+    font-size: 1.75em;
+}
+
+.light {
+    font-weight: lighter;
+}
+
+.bolder {
+    font-weight:800;
+}
+
+.alegreya {
+    font-family: 'Alegreya', serif;
 }
 
 .neuton {
@@ -47,7 +70,6 @@ p.medgray {
     line-height: 2em;
     padding-top: 1em;
     font-size: 1.17em;
-    text-align: center;
 }
 
 .text { 
