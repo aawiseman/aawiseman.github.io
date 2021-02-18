@@ -34,7 +34,7 @@ function changeText() {
     r_text[30] = "is hanging out with Vertical Horizon";
     r_text[31] = "is watching Kirk Cameron movies";
     r_text[32] = "is hanging out with Kirk Cameron";
-    r_text[33] = "is Kirk Cameron. Have you seen then in the same place at the same time?";
+    r_text[33] = "is Kirk Cameron. Have you seen them in the same place at the same time?";
     r_text[34] = "is opening Tim Tebow's Steakhouse";
     r_text[35] = "is opening a Mexican restaurant in Gainesville: Timmy T's Taco Town";
     r_text[36] = "is trying to buy a Planet Hollywood franchise";
