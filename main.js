@@ -97,6 +97,13 @@ function changeText() {
     r_text[94] = "retired from baseball. Up next: golf?"
     r_text[95] = "retired from baseball. Up next: archery"
     r_text[96] = "retired from baseball. Up next: probably some dumb TV gig"
-    var i = Math.floor(97 * Math.random())
+    r_text[97] = "retired from baseball. Up next: field hockey"
+    r_text[98] = "retired from baseball. Up next: the XFL"
+    r_text[99] = "retired from baseball. Up next: that three person basketball league"
+    r_text[100] = "retired from baseball. Up next: darts"
+    r_text[101] = "retired from baseball. Up next: eSports"
+    r_text[102] = "retired from baseball. Up next: rugby"
+    r_text[103] = "retired from baseball. Up next: Major League Soccer?"
+    var i = Math.floor(104 * Math.random())
     document.getElementById('boldStuff').innerHTML = r_text[i];
 }
