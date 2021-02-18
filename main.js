@@ -104,6 +104,6 @@ function changeText() {
     r_text[101] = "retired from baseball. Up next: eSports"
     r_text[102] = "retired from baseball. Up next: rugby"
     r_text[103] = "retired from baseball. Up next: Major League Soccer?"
-    var i = Math.floor(104 * Math.random())
+    var i = Math.floor(103 * Math.random())
     document.getElementById('boldStuff').innerHTML = r_text[i];
 }
