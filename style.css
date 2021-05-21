@@ -118,7 +118,11 @@ p.light {
     font-family: 'Neuton', serif;
 }
 
-.shadowfilter {}
+.shadowfilter {
+    margin-left: auto;
+    margin-right: auto;
+    width: 91px;
+}
 
 .shadowfilter:hover {
     -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.5));

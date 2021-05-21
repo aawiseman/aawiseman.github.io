@@ -81,6 +81,7 @@ function changeText() {
     r_text[77] = "is speaking at giant Christian gatherings"
     r_text[78] = "has the Tim Tebow Foundation, of course"
     r_text[79] = "posts religious stuff on Twitter all the time"
+    r_text[80] = "is really into TikTok"
     r_text[81] = "is poopin'"
     r_text[82] = "is self-quarantining"
     r_text[83] = "is social distancing, we hope"
@@ -107,5 +108,7 @@ function changeText() {
     r_text[104] = "just signed with the Jaguars for some reason"
     r_text[105] = "is a tight end now apparently"
     var i = Math.floor(105 * Math.random())
+    console.log(i);
+    console.log(r_text[i]);
     document.getElementById('boldStuff').innerHTML = r_text[i];
 }
