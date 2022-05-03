@@ -67,6 +67,10 @@ p.light {
     font-family: 'Alegreya', serif;
 }
 
+.verdana {
+    font-family: 'Verdana', sans-serif;
+}
+
 .neuton {
     font-family: 'Neuton', serif;
 }
@@ -132,6 +136,33 @@ p.light {
 .imagedropshadow {
     padding: 5px;
     border: solid 1px #EFEFEF;
+}
+
+.headimg {
+    height: 50%;
+    width:  50%;
+    display: inline-block;
+}
+
+.fullmax {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+span {
+    display: inline-block;
+}
+
+.imgcontain {
+    object-fit: contain;
+}
+
+.imgfill {
+    object-fit: fill;
+}
+
+.imgscale {
+    object-fit: scale-down;
 }
 
 a:hover img.imagedropshadow {
