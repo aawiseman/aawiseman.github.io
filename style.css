@@ -21,6 +21,21 @@ a:active {
     text-decoration: underline;
 }
 
+/* colors for natiobals */
+
+a.one:link {
+    color:#AB0003;
+    text-decoration: underline;
+}
+a.one:visited {
+    color:#AB0003;
+    text-decoration: underline;
+}
+a.one:hover {
+    color:#AB0003;
+    text-decoration: none;
+}
+
 p {
     white-space: pre;
     font-family: 'Neuton', serif;
