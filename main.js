@@ -107,7 +107,8 @@ function changeText() {
     r_text[103] = "retired from baseball. Up next: Major League Soccer?"
     r_text[104] = "just signed with the Jaguars for some reason"
     r_text[105] = "is a tight end now apparently"
-    var i = Math.floor(105 * Math.random())
+    r_text[106] = "is the new Broncos coach"    
+    var i = Math.floor(106 * Math.random())
     console.log(i);
     console.log(r_text[i]);
     document.getElementById('boldStuff').innerHTML = r_text[i];
