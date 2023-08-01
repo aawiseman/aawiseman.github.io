@@ -36,6 +36,21 @@ a.one:hover {
     text-decoration: none;
 }
 
+/* colors for tebow */
+
+a.two:link {
+    color:gainsboro;
+    text-decoration: none;
+}
+a.two:visited {
+    color:gainsboro;
+    text-decoration: none;
+}
+a.two:hover {
+    color:snow;
+    text-decoration: none;
+}
+
 p {
     white-space: pre;
     font-family: 'Neuton', serif;
@@ -45,6 +60,16 @@ p {
 
 p.gray {
     color: lightgray;
+    text-align: left;
+}
+
+p.white {
+    color: white;
+    text-align: left;
+}
+
+p.snow {
+    color: snow;
     text-align: left;
 }
 
@@ -209,6 +234,16 @@ span {
 
 .container {
     max-width: 800px;
+      position: relative;
+  min-height: 100vh;
+  padding-bottom: 1rem;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1rem;            /* Footer height */
 }
 
 .imgcontain {
@@ -228,6 +263,14 @@ a:hover img.imagedropshadow {
     -moz-box-shadow: 1px 1px 5px #999;
     -webkit-box-shadow: 1px 1px 5px #999;
     box-shadow: 1px 1px 5px #999;
+}
+
+div#bottom {
+  position: fixed;
+  bottom: 0;
+
+  /* And if you want the div to be full-width: */
+  left: 5;
 }
 
 /* 
