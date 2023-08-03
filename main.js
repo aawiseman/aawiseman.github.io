@@ -9,7 +9,7 @@ function changeText() {
     r_text[5] = "is drunk (on life)";
     r_text[6] = "is high (on life)";
     r_text[7] = "will return when we are ready for him, like Quetzalcoatl";
-    r_text[8] = "is in Smashing Pumpkins now (yeah, Billy Corgan got rid of all the original people)";
+    r_text[8] = "is in Smashing Pumpkins now";
     r_text[9] = "is doing yoga on his Wii Fit";
     r_text[10] = "is trying to find Carmen Sandiego";
     r_text[11] = "is caulking his wagon to ford the river";
@@ -105,10 +105,15 @@ function changeText() {
     r_text[101] = "retired from baseball. Up next: eSports"
     r_text[102] = "retired from baseball. Up next: rugby"
     r_text[103] = "retired from baseball. Up next: Major League Soccer?"
-    r_text[104] = "just signed with the Jaguars for some reason"
+    r_text[104] = "just signed with the Jaguars?"
     r_text[105] = "is a tight end now apparently"
     r_text[106] = "is the new Broncos coach"    
-    var i = Math.floor(106 * Math.random())
+    r_text[107] = "received the 2008 Quaqua Protégé Award as outstanding home-education graduate"
+    r_text[108] = "is on a show with Stephen A. Smith"
+    r_text[109] = "has a non-profit that fights sex trafficking"
+    r_text[110] = "owns a minor league hockey team in Lake Tahoe"
+    r_text[111] = "owns a minor league hockey team in Lake Tahoe"
+    var i = Math.floor(111 * Math.random())
     console.log(i);
     console.log(r_text[i]);
     document.getElementById('boldStuff').innerHTML = r_text[i];
