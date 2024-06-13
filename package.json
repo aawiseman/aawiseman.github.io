@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/aawiseman/aawiseman.github.io#readme",
   "devDependencies": {
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.0",
     "gulp-serve": "^1.4.0"
   }
 }
