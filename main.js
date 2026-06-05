@@ -1,120 +1,146 @@
+// 1. Move the array OUTSIDE the function so it doesn't reset on every click.
+// Also, using standard array notation [] is cleaner than 'new Array()'.
+const r_text = [
+    "is coaching at some high school somewhere",
+    "is playing in the CFL, probably",
+    "is trying to get all his stats to 99 on Madden",
+    "is coaching at Air Force or Navy or some school that runs the option all the time",
+    "is playing Tecmo Bowl in his mom's basement",
+    "is drunk (on life)",
+    "is high (on life)",
+    "will return when we are ready for him, like Quetzalcoatl",
+    "is in Smashing Pumpkins now",
+    "is doing yoga on his Wii Fit",
+    "is trying to find Carmen Sandiego",
+    "is caulking his wagon to ford the river",
+    "died of gangrene",
+    "is in the Arena League. Is that where Shreveport plays?",
+    "is giving motivational speeches, probably",
+    "is trying to launch his own athletic apparel brand, Under Tebow",
+    "is trying to convince people that Jars of Clay really is a good band",
+    "is photoshopping every NFL jersey onto himself",
+    "is Googling \"does NFL Europe still exist\"",
+    "is Googling \"list of Arena League teams\"",
+    "is Googling \"what other countries play football not soccer\"",
+    "is Googling \"do any former NFL players play professional soccer\"",
+    "is Googling \"sports similar to football\"",
+    "is Googling \"rules to Australian football\"",
+    "is Googling \"is Gaelic football like regular football\"",
+    "is Googling \"do they run the Wildcat in rugby\"",
+    "is Googling \"Timmy Football\"",
+    "is trying out potential ESPN catchphrases. \"Pow!\" \"Zap!\"",
+    "is writing his autobiography with Mitch Albom. it is heartwarming or treacly depending on how discerning/jaded you are",
+    "is trying to pitch a football version of Mighty Ducks",
+    "is hanging out with Vertical Horizon",
+    "is watching Kirk Cameron movies",
+    "is hanging out with Kirk Cameron",
+    "is Kirk Cameron. Have you seen them in the same place at the same time?",
+    "is opening Tim Tebow's Steakhouse",
+    "is opening a Mexican restaurant in Gainesville: Timmy T's Taco Town",
+    "is trying to buy a Planet Hollywood franchise",
+    "is. He just is.",
+    "is reading all the Tom Clancy books",
+    "is trying to get through all the Twilight books",
+    "is a nice young man",
+    "is a real high motor guy",
+    "is a real character guy",
+    "is asleep on Johnny Manziel's couch",
+    "is doing open mics at coffee shops in Florida",
+    "is focusing on his music",
+    "is the Lieutenant Governor of Florida",
+    "is running for deputy mayor of Gainesville",
+    "is putting together a PAC to run for Florida state senate",
+    "is a Florida state senator",
+    "is finishing his PhD in geology",
+    "is finishing his PhD in theater",
+    "is finishing his PhD in art history",
+    "is finishing his PhD in Tagalog",
+    "is finishing his PhD in leisure studies",
+    "is still hiding from John Elway",
+    "is an ESPN college football commentator",
+    "is updating his Geocities page",
+    "is updating his LinkedIn",
+    "died of dysentery",
+    "is Tebowing, obviously",
+    "is a real gym rat",
+    "joined the circus",
+    "drives an Uber in Jersey",
+    "is working out for the Eagles",
+    "got signed by the Eagles, for some reason",
+    "is still sad about getting dumped by Miss Universe",
+    "is trying to reinvent himself as a knuckleball pitcher",
+    "thinks he could play tight end somewhere",
+    "has returned to the land of his birth, the Philippines",
+    "is a baseball player now",
+    "hosts some kind of construction reality show on Fox",
+    "is in the Mets' farm system",
+    "is having long phone conversations with Skip Bayless",
+    "posts on Twitter A LOT",
+    "made a movie called Run the Race. No, seriously",
+    "has weird shoulders",
+    "is speaking at giant Christian gatherings",
+    "has the Tim Tebow Foundation, of course",
+    "posts religious stuff on Twitter all the time",
+    "is really into TikTok",
+    "is poopin'",
+    "is self-quarantining",
+    "is social distancing, we hope",
+    "is washing his hands thoroughly",
+    "is retired",
+    "got vaccinated",
+    "is quarantining",
+    "is socially distancing",
+    "retired from baseball. Up next: lacrosse",
+    "retired from baseball. Up next: handball",
+    "retired from baseball. Up next: caber toss",
+    "retired from baseball. Up next: professional billards",
+    "retired from baseball. Up next: pro bowling",
+    "retired from baseball. Up next: golf?",
+    "retired from baseball. Up next: archery",
+    "retired from baseball. Up next: probably some dumb TV gig",
+    "retired from baseball. Up next: field hockey",
+    "retired from baseball. Up next: the XFL",
+    "retired from baseball. Up next: that three person basketball league",
+    "retired from baseball. Up next: darts",
+    "retired from baseball. Up next: eSports",
+    "retired from baseball. Up next: rugby",
+    "retired from baseball. Up next: Major League Soccer?",
+    "just signed with the Jaguars?",
+    "is a tight end now apparently",
+    "is the new Broncos coach",    
+    "received the 2008 Quaqua Protégé Award as outstanding home-education graduate",
+    "is on a show with Stephen A. Smith",
+    "has a non-profit that fights sex trafficking",
+    "owns a minor league hockey team in Lake Tahoe",
+    "owns a minor league hockey team in Augusta, Georgia",
+    "co-wrote a book about something",
+    "is the original Jaxson Dart",
+    "runs the Tim Tebow Foundation",
+    "got really into Labubus",
+    "got really into Lorde",
+    "got really into White Lotus",
+    "got really into Survivor"
+];
+
 function changeText() {
-    document.getElementById('boldStuff').innerHTML = " ";
-    var r_text = new Array();
-    r_text[0] = "is coaching at some high school somewhere";
-    r_text[1] = "is playing in the CFL, probably";
-    r_text[2] = "is trying to get all his stats to 99 on Madden";
-    r_text[3] = "is coaching at Air Force or Navy or some school that runs the option all the time";
-    r_text[4] = "is playing Tecmo Bowl in his mom's basement";
-    r_text[5] = "is drunk (on life)";
-    r_text[6] = "is high (on life)";
-    r_text[7] = "will return when we are ready for him, like Quetzalcoatl";
-    r_text[8] = "is in Smashing Pumpkins now";
-    r_text[9] = "is doing yoga on his Wii Fit";
-    r_text[10] = "is trying to find Carmen Sandiego";
-    r_text[11] = "is caulking his wagon to ford the river";
-    r_text[12] = "died of gangrene";
-    r_text[13] = "is in the Arena League. Is that where Shreveport plays?";
-    r_text[14] = "is giving motivational speeches, probably";
-    r_text[15] = "is trying to launch his own athletic apparel brand, Under Tebow";
-    r_text[16] = "is trying to convince people that Jars of Clay really is a good band";
-    r_text[17] = "is photoshopping every NFL jersey onto himself";
-    r_text[18] = "is Googling \"does NFL Europe still exist\"";
-    r_text[19] = "is Googling \"list of Arena League teams\"";
-    r_text[20] = "is Googling \"what other countries play football not soccer\"";
-    r_text[21] = "is Googling \"do any former NFL players play professional soccer\"";
-    r_text[22] = "is Googling \"sports similar to football\"";
-    r_text[23] = "is Googling \"rules to Australian football\"";
-    r_text[24] = "is Googling \"is Gaelic football like regular football\"";
-    r_text[25] = "is Googling \"do they run the Wildcat in rugby\"";
-    r_text[26] = "is Googling \"Timmy Football\"";
-    r_text[27] = "is trying out potential ESPN catchphrases. \"Pow!\" \"Zap!\"";
-    r_text[28] = "is writing his autobiography with Mitch Albom. it is heartwarming or treacly depending on how discerning/jaded you are";
-    r_text[29] = "is trying to pitch a football version of Mighty Ducks";
-    r_text[30] = "is hanging out with Vertical Horizon";
-    r_text[31] = "is watching Kirk Cameron movies";
-    r_text[32] = "is hanging out with Kirk Cameron";
-    r_text[33] = "is Kirk Cameron. Have you seen them in the same place at the same time?";
-    r_text[34] = "is opening Tim Tebow's Steakhouse";
-    r_text[35] = "is opening a Mexican restaurant in Gainesville: Timmy T's Taco Town";
-    r_text[36] = "is trying to buy a Planet Hollywood franchise";
-    r_text[37] = "is. He just is.";
-    r_text[38] = "is reading all the Tom Clancy books";
-    r_text[39] = "is trying to get through all the Twilight books";
-    r_text[40] = "is a nice young man";
-    r_text[41] = "is a real high motor guy";
-    r_text[42] = "is a real character guy";
-    r_text[43] = "is asleep on Johnny Manziel's couch";
-    r_text[44] = "is doing open mics at coffee shops in Florida";
-    r_text[45] = "is focusing on his music";
-    r_text[46] = "is the Lieutenant Governor of Florida";
-    r_text[47] = "is running for deputy mayor of Gainesville";
-    r_text[48] = "is putting together a PAC to run for Florida state senate";
-    r_text[49] = "is a Florida state senator";
-    r_text[50] = "is finishing his PhD in geology";
-    r_text[51] = "is finishing his PhD in theater";
-    r_text[52] = "is finishing his PhD in art history";
-    r_text[53] = "is finishing his PhD in Tagalog";
-    r_text[54] = "is finishing his PhD in leisure studies";
-    r_text[55] = "is still hiding from John Elway";
-    r_text[56] = "is an ESPN college football commentator";
-    r_text[57] = "is updating his Geocities page";
-    r_text[58] = "is updating his LinkedIn";
-    r_text[59] = "died of dysentery";
-    r_text[60] = "is Tebowing, obviously";
-    r_text[61] = "is a real gym rat";
-    r_text[62] = "joined the circus";
-    r_text[63] = "drives an Uber in Jersey";
-    r_text[64] = "is working out for the Eagles";
-    r_text[65] = "got signed by the Eagles, for some reason";
-    r_text[66] = "is still sad about getting dumped by Miss Universe";
-    r_text[67] = "is trying to reinvent himself as a knuckleball pitcher";
-    r_text[68] = "thinks he could play tight end somewhere";
-    r_text[69] = "has returned to the land of his birth, the Philippines"
-    r_text[70] = "is a baseball player now"
-    r_text[71] = "hosts some kind of construction reality show on Fox"
-    r_text[72] = "is in the Mets' farm system"
-    r_text[73] = "is having long phone conversations with Skip Bayless"
-    r_text[74] = "posts on Twitter A LOT"
-    r_text[75] = "made a movie called Run the Race. No, seriously"
-    r_text[76] = "has weird shoulders"
-    r_text[77] = "is speaking at giant Christian gatherings"
-    r_text[78] = "has the Tim Tebow Foundation, of course"
-    r_text[79] = "posts religious stuff on Twitter all the time"
-    r_text[80] = "is really into TikTok"
-    r_text[81] = "is poopin'"
-    r_text[82] = "is self-quarantining"
-    r_text[83] = "is social distancing, we hope"
-    r_text[84] = "is washing his hands thoroughly"
-    r_text[85] = "is retired"
-    r_text[86] = "got vaccinated"
-    r_text[87] = "is quarantining"
-    r_text[88] = "is socially distancing"
-    r_text[89] = "retired from baseball. Up next: lacrosse"
-    r_text[90] = "retired from baseball. Up next: handball"
-    r_text[91] = "retired from baseball. Up next: caber toss"
-    r_text[92] = "retired from baseball. Up next: professional billards"
-    r_text[93] = "retired from baseball. Up next: pro bowling"
-    r_text[94] = "retired from baseball. Up next: golf?"
-    r_text[95] = "retired from baseball. Up next: archery"
-    r_text[96] = "retired from baseball. Up next: probably some dumb TV gig"
-    r_text[97] = "retired from baseball. Up next: field hockey"
-    r_text[98] = "retired from baseball. Up next: the XFL"
-    r_text[99] = "retired from baseball. Up next: that three person basketball league"
-    r_text[100] = "retired from baseball. Up next: darts"
-    r_text[101] = "retired from baseball. Up next: eSports"
-    r_text[102] = "retired from baseball. Up next: rugby"
-    r_text[103] = "retired from baseball. Up next: Major League Soccer?"
-    r_text[104] = "just signed with the Jaguars?"
-    r_text[105] = "is a tight end now apparently"
-    r_text[106] = "is the new Broncos coach"    
-    r_text[107] = "received the 2008 Quaqua Protégé Award as outstanding home-education graduate"
-    r_text[108] = "is on a show with Stephen A. Smith"
-    r_text[109] = "has a non-profit that fights sex trafficking"
-    r_text[110] = "owns a minor league hockey team in Lake Tahoe"
-    r_text[111] = "owns a minor league hockey team in Lake Tahoe"
-    var i = Math.floor(111 * Math.random())
-    console.log(i);
-    console.log(r_text[i]);
-    document.getElementById('boldStuff').innerHTML = r_text[i];
+    const outputElement = document.getElementById('boldStuff');
+
+    // 2. Check if we've run out of items
+    if (r_text.length === 0) {
+        outputElement.innerHTML = "... sorry, you've learned all there is to know about Tim Tebow!";
+        console.log("No items left in the array.");
+        return;
+    }
+
+    // 3. Dynamically use r_text.length instead of hardcoding 111.
+    // (Your original code had 112 items, but Math.random() * 111 missed the last item!)
+    const randomIndex = Math.floor(Math.random() * r_text.length);
+    
+    // 4. Splice removes the chosen string from the array and returns it inside a mini-array.
+    const pickedText = r_text.splice(randomIndex, 1)[0];
+    
+    // 5. Update the DOM
+    console.log(`Remaining options: ${r_text.length}`);
+    console.log(pickedText);
+    outputElement.innerHTML = pickedText;
 }
