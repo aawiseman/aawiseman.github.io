@@ -1,6 +1,4 @@
-// 1. Move the array OUTSIDE the function so it doesn't reset on every click.
-// Also, using standard array notation [] is cleaner than 'new Array()'.
-const r_text = [
+const r_text_backup = [
     "is coaching at some high school somewhere",
     "is playing in the CFL, probably",
     "is trying to get all his stats to 99 on Madden",
@@ -119,28 +117,71 @@ const r_text = [
     "got really into Labubus",
     "got really into Lorde",
     "got really into White Lotus",
-    "got really into Survivor"
+    "got really into Survivor",
+    "has moved to Panama",
+    "got married to Miss Universe",
+    "invested in a soccer team in Jacksonville",
+    "put the ram in the rama lama ding dong"
 ];
 
-function changeText() {
-    const outputElement = document.getElementById('boldStuff');
+let r_text = [...r_text_backup];
+let hasInteracted = false;
 
-    // 2. Check if we've run out of items
+// 1. This waits for the page to fully load
+window.onload = function() {
+    const faceLink = document.getElementById('faceLink');
+    const hint = document.getElementById('floatingHint');
+    
+    displayJoke(true);
+
+    if (faceLink && hint) {
+        faceLink.addEventListener('mousemove', function(e) {
+            if (!hasInteracted) {
+                hint.style.setProperty('display', 'block', 'important');
+                
+                // 1. Get the precise, stable bounding box of the face container
+                const rect = faceLink.getBoundingClientRect();
+                
+                // 2. Math calculation: Page viewport coordinate minus the container's top-left edge
+                // This creates a perfect, unshakeable local coordinate system
+                const mouseX = e.clientX - rect.left;
+                const mouseY = e.clientY - rect.top;
+                
+                // 3. Apply position
+                hint.style.left = (mouseX + 10) + 'px';
+                hint.style.top = (mouseY + 10) + 'px';
+            }
+        });
+
+        faceLink.addEventListener('mouseout', function() {
+            hint.style.setProperty('display', 'none', 'important');
+        });
+    }
+};
+
+// 3. This is what runs when a user clicks the face in your HTML
+function changeText() {
+    displayJoke(false);
+}
+
+// 4. Combined logic function to cleanly handle picking jokes
+function displayJoke(isInitialLoad) {
+    if (!isInitialLoad) {
+        hasInteracted = true;
+        const hint = document.getElementById('floatingHint');
+        if (hint) hint.style.display = 'none';
+    }
+
+    const outputElement = document.getElementById('boldStuff');
+    if (!outputElement) return;
+
     if (r_text.length === 0) {
         outputElement.innerHTML = "... sorry, you've learned all there is to know about Tim Tebow!";
-        console.log("No items left in the array.");
         return;
     }
 
-    // 3. Dynamically use r_text.length instead of hardcoding 111.
-    // (Your original code had 112 items, but Math.random() * 111 missed the last item!)
     const randomIndex = Math.floor(Math.random() * r_text.length);
-    
-    // 4. Splice removes the chosen string from the array and returns it inside a mini-array.
     const pickedText = r_text.splice(randomIndex, 1)[0];
     
-    // 5. Update the DOM
-    console.log(`Remaining options: ${r_text.length}`);
-    console.log(pickedText);
     outputElement.innerHTML = pickedText;
 }
