@@ -13,96 +13,56 @@
     <title>What is Tim Tebow doing now?</title>
 </head>
 <body>
-    <div class="container">
-        <div class="big center">
-            <div class="neuton">
-                <h1>What is Tim Tebow doing now?</h1>
+    <div class="container center">
+        
+        <!-- Main Headline -->
+        <div class="headline-box neuton">
+            <h1>What is Tim Tebow doing now?</h1>
+        </div>
+
+        <!-- Joke Section -->
+        <div class="joke-box neuton gray">
+            <h2>Tim Tebow <span id="boldStuff"></span></h2>
+        </div>
+
+        <!-- Face + Mobile Prompt Wrapper -->
+        <div class="face-container">
+            <a href="#" id="faceLink" onClick="displayJoke(); changeText(); return false;">
+                <div class="pic shadowfilter"></div>
+            </a>
+
+            <!-- Mobile Prompt Anchored Beside Face -->
+            <div id="mobile-tebow-msg" class="mobile-only-msg">
+                <span class="arrow">↖</span>
+                <span>Click Tebow's face!</span>
             </div>
+        </div>
 
-            <!-- Facebook SDK -->
-            <!--
-            <script>
-                (function(d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0];
-                    if (d.getElementById(id)) return;
-                    js = d.createElement(s);
-                    js.id = id;
-                    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-                    fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));
-            </script>
-            -->
-            <div class="big neuton center gray">
-                <h2>Tim Tebow <b id="boldStuff"></b></h2>
-                
-                <p></p>
+        <!-- Social Media & Links -->
+        <div class="fb" align="left">
+            <span class="fb-share-button" data-href="http://www.whatistimtebowdoingnow.com/" data-layout="button_count"></span>
+        </div>
 
-<div class="big neuton shadowfilter" style="position: relative;">
-    <a href="#" id="faceLink" onClick="changeText(); return false;">
-        <div class="pic"></div>
-    </a>
-</div>
-
-<!-- Move it OUTSIDE .big so it has full screen width -->
-<div id="mobile-tebow-msg" class="mobile-only-msg">
-    <span class="arrow">↖</span>
-    <div> Click Tebow's face!</div>
-</div>
-
-<span id="floatingHint" style="display: none !important; position: absolute; pointer-events: none; z-index: 1000; color: black; font-size: 14px; white-space: nowrap; font-weight: bold; background-color: #ffffff; padding: 4px 8px; border-radius: 4px; box-shadow: 0px 2px 8px rgba(0,0,0,0.15);">
-    Click for more!
-</span>
-</div>
-<div id="boldStuff"> </div>
-            </div>
-            
-            <p></p>
-
-            <!-- Social Media Buttons -->
-            <div class="fb" align="left">
-                <span class="fb-share-button" data-href="http://www.whatistimtebowdoingnow.com/" data-layout="button_count"></span>
-            </div>
-        <!--
-            <div class="fb" align="left">
-                <span> 
-                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.whatistimtebowdoingnow.com">Tweet</a>
-                    <script>
-                        ! function(d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0],
-                                p = /^http:/.test(d.location) ? 'http' : 'https';
-                            if (!d.getElementById(id)) {
-                                js = d.createElement(s);
-                                js.id = id;
-                                js.src = p + '://platform.twitter.com/widgets.js';
-                                fjs.parentNode.insertBefore(js, fjs);
-                            }
-                        }(document, 'script', 'twitter-wjs');
-                    </script>
-                </span>
-            </div>
-        -->
-
-            <div class="gray neuton" align="left">
-                <a href="/about.html">About</a><br>
-            </div> 
-            <br>
-            <footer id="footer">
-                <div class="bottom snow" align="left" style="font-size:10px;">
-                    <a class="two" href="https://shirtgoodhq.com">Get cool shirts, hats, sweatshirts and more </a>
-                </div>
-            </footer>
+        <div class="gray neuton" align="left">
+            <a href="/about.html">About</a><br>
         </div> 
+
+        <footer id="footer">
+            <div class="bottom snow" align="left" style="font-size:10px;">
+                <a class="two" href="https://shirtgoodhq.com">Get cool shirts, hats, sweatshirts and more </a>
+            </div>
+        </footer>
+
     </div>
 
-    <!-- Core Scripts loaded at the bottom safely -->
+    <!-- Core Scripts -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     
-    <!-- Your main local script file logic -->
     <script src="main.js"></script>
 
-    <!-- Default Statcounter code -->
+    <!-- Statcounter code -->
     <script type="text/javascript">
         var sc_project=12906178; 
         var sc_invisible=1; 
