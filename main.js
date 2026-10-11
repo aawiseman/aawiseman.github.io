@@ -20,7 +20,7 @@ function changeText() {
 
     if (r_text.length === 0) {
         if (r_text_backup.length > 0) {
-            r_text = [...r_text_backup];
+            r_text = [...r_text_backup]; // Refill deck when empty
         } else {
             return;
         }
@@ -29,12 +29,16 @@ function changeText() {
     const randomIndex = Math.floor(Math.random() * r_text.length);
     const pickedText = r_text.splice(randomIndex, 1)[0];
     
-    console.log(`Joke #${randomIndex}: ${pickedText}`);
+    // Find the joke's actual position in the full backup array (1-based for readability)
+    const originalIndex = r_text_backup.indexOf(pickedText) + 1;
+    
+    // Log the true joke number
+    console.log(`Joke #${originalIndex}: ${pickedText}`);
     
     const fullJoke = "Tim Tebow " + pickedText;
     outputElement.innerHTML = fullJoke;
 
-    // Toggle the long-text class based on character count
+    // Toggle mobile scaling class
     if (fullJoke.length >= 65) {
         outputElement.classList.add('long-text');
     } else {
