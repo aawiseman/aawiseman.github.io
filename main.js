@@ -185,3 +185,24 @@ function displayJoke(isInitialLoad) {
     
     outputElement.innerHTML = pickedText;
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const tebowMsg = document.getElementById("mobile-tebow-msg");
+
+  // Check if the user has already visited/loaded the page in this session
+  const hasSeenMessage = sessionStorage.getItem("hasSeenTebowMsg");
+
+  if (!hasSeenMessage && tebowMsg) {
+    // Show the message on the first load
+    tebowMsg.classList.add("show");
+
+    // Hide it and mark as seen when clicked
+    tebowMsg.addEventListener("click", () => {
+      tebowMsg.classList.remove("show");
+      sessionStorage.setItem("hasSeenTebowMsg", "true");
+    });
+
+    // Mark as seen so refreshing the page won't show it again
+    sessionStorage.setItem("hasSeenTebowMsg", "true");
+  }
+});
