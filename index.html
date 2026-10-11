@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     
     <link href="https://fonts.googleapis.com/css?family=Alegreya:900|Neuton:800&display=swap" rel="stylesheet">
@@ -15,30 +13,26 @@
 <body>
     <div class="container center">
         
-        <!-- Main Headline -->
         <div class="headline-box neuton">
             <h1>What is Tim Tebow doing now?</h1>
         </div>
 
-        <!-- Joke Section -->
         <div class="joke-box neuton gray">
             <h2>Tim Tebow <span id="boldStuff"></span></h2>
         </div>
 
-        <!-- Face + Mobile Prompt Wrapper -->
+        <!-- Face + Centered Prompt Wrapper -->
         <div class="face-container">
-            <a href="#" id="faceLink" onClick="displayJoke(); changeText(); return false;">
+            <a href="#" id="faceLink" onclick="changeText(); return false;">
                 <div class="pic shadowfilter"></div>
             </a>
 
-            <!-- Mobile Prompt Anchored Beside Face -->
-            <div id="mobile-tebow-msg" class="mobile-only-msg">
-                <span class="arrow">↖</span>
-                <span>Click Tebow's face!</span>
+            <!-- Subtitle Centered Under Face -->
+            <div id="tebow-msg" class="tebow-msg show">
+                <span>&nbsp; &nbsp; Click Tebow's face for more</span>
             </div>
         </div>
 
-        <!-- Social Media & Links -->
         <div class="fb" align="left">
             <span class="fb-share-button" data-href="http://www.whatistimtebowdoingnow.com/" data-layout="button_count"></span>
         </div>
@@ -55,20 +49,10 @@
 
     </div>
 
-    <!-- Core Scripts -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     
     <script src="main.js"></script>
-
-    <!-- Statcounter code -->
-    <script type="text/javascript">
-        var sc_project=12906178; 
-        var sc_invisible=1; 
-        var sc_security="f958e360"; 
-    </script>
-    <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
-    <noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12906178/0/f958e360/1/" alt="Web Analytics" referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 </body>
 </html>
