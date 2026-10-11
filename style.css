@@ -23,8 +23,12 @@ p {
     font-family: 'Neuton', serif;
 }
 
-.gray {
+.dimgray {
     color: dimgray;
+}
+
+.gray {
+    color: #777777; /* Softer, lighter gray */
 }
 
 .container {
@@ -100,5 +104,12 @@ h2 {
     h2, #boldStuff {
         font-size: 1.55rem !important;
         line-height: 1.18 !important;
+    }
+}
+
+/* Only shrink long jokes on mobile devices (screens smaller than 768px) */
+@media (max-width: 767px) {
+    #boldStuff.long-text {
+        font-size: 80%;
     }
 }
