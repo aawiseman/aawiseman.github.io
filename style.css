@@ -285,26 +285,34 @@ font-family: 'Alegreya', serif;
 
 /* Show only on mobile when active */
 @media screen and (max-width: 768px) {
+  /* Force line-height on ALL elements inside .big to collapse line height on wraps */
+  .big, 
+  .big *, 
+  #boldStuff, 
+  #boldStuff * {
+    line-height: 0.95 !important;
+  }
+
+  /* Reduce vertical spacing around the head image container if it is pushing text */
+  .big .pic,
+  .pic {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* --- Mobile "Click Tebow" Prompt --- */
   .mobile-only-msg.show {
     display: block !important;
-    
-    /* Allow full width across the phone screen */
     width: 100% !important;
-    
-    /* Left align and push it over to the right */
     text-align: left !important;
-    padding-left: 55% !important; /* Adjust percentage to move it left or right */
-    
-    /* Keep on one line unless it hits the screen edge */
+    padding-left: 55% !important;
     white-space: normal !important;
-    margin-top: 10px;
-    
-    /* Text styling */
+    margin-top: 5px;
+    line-height: 1.1 !important;
     font-size: 1.5rem;
     color: #000000;
   }
 
-  /* Keep the arrow on the same line */
   .mobile-only-msg .arrow {
     display: inline !important;
     font-size: 1.5rem;
